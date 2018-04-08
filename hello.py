@@ -5,5 +5,21 @@ app = Flask(__name__)
 def hello():
     return "Hello World!"
 	
+@app.route("/test")
+def test():
+    return "test adresu"
+	
+@app.route("/suma")
+def suma():
+    a = 5
+    b = 6
+    return str(a+b)
+	
+@app.route("/iloczyn")
+def iloczyn():
+    a=5
+    b=6
+    return str(a*b)
+	
 if __name__ == '__main__':
     app.run()
